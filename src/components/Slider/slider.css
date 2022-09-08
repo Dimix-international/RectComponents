@@ -1,0 +1,90 @@
+
+.slider {
+    background-color: #357eff;
+    max-width: 1000px;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: opacity;
+}
+
+.left {
+    flex: 1;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.text {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    margin-bottom: 34px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 140%;
+}
+
+.jobPosition {
+    font-size: 17px;
+    line-height: 140%;
+}
+
+.right {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in;
+}
+.arrow:hover {
+    opacity: 1;
+}
+
+.arrowLeft {
+    left: 24px;
+    transform: rotate(180deg);
+}
+
+.arrowRight {
+    right: 24px;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}

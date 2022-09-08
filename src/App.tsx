@@ -1,11 +1,12 @@
 import React from 'react';
-import {InfinityMenu} from "./components/InfinityMenu/InfinityMenu";
 import './App.css';
+import {Slider} from "./components/Slider/Slider";
+import {data} from "./components/Slider/data";
 
 function App() {
   return (
     <div className="App">
-      <InfinityMenu />
+      <Slider reviews={data}/>
     </div>
   );
 }
